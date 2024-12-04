@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI;
+
+public class Player : MonoBehaviour
+{
+    private Camera cam;
+    private NavMeshAgent agent;
+    // Start is called before the first frame update
+    void Start()
+    {
+        cam = Camera.main;
+        agent = GetComponent<NavMeshAgent>();
+    }
+
+    // Update is called once per frame
+   // El FixedUpdate puede dar caso a misclicks para esto mejor un Update
+    void Update()
+    {
+        // Si clicko con el mouse izq
+        if (Input.GetMouseButtonDown(0))
+        {
+          // creo un rayo desde la camara a la posicion del raton
+            Ray ray=cam.ScreenPointToRay( Input.mousePosition );
+            
+            //y si ese rayo impacta en algo...
+            if (Physics.Raycast(ray, out RaycastHit hitInfo))
+            {
+                //Le decimos al agente (nosotros) que tiene como destino en el punto de impacto
+                agent.SetDestination(hitInfo.point);
+            }
+
+        }
+    }
+}
