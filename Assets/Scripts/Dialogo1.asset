@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e0e1ff70ead4514f97bb4ef64a6148e, type: 3}
   m_Name: Dialogo1
   m_EditorClassIdentifier: 
-  frases: []
+  frases:
+  - 'Hola aventurero, te esperan grandes aventuras '
+  - Necesito que me toques y me hagas un encargo
+  - Ve a buscar al Yayo Pedro y su pivote que tengo hambre
   tiempoEntreLetras: 0
