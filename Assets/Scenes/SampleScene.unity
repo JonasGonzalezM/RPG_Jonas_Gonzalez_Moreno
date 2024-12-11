@@ -3277,6 +3277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9e156bb310bd204a841e946cfeb7035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  marcoDialogo: {fileID: 1243422927}
+  textoDialogo: {fileID: 673754937}
 --- !u!1 &639559729
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,13 +4593,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1513543108}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 618199221}
+        m_TargetAssemblyTypeName: SistemaDialogo, Assembly-CSharp
+        m_MethodName: SiguienteFrase
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7223,7 +7225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1243422928
 RectTransform:
   m_ObjectHideFlags: 0

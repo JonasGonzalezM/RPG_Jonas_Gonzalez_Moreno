@@ -74,7 +74,7 @@ public class SistemaDialogo : MonoBehaviour
     public void CompletarFrase()
     {
         //Si me piden completar la frase entera, en el texto pongo la frase entera
-        textoDialogo.text = dialogoActual.Frases[indiceFraseActual];
+        textoDialogo.text = dialogoActual.frases[indiceFraseActual];
         //paro las corrutinas que puedan estar vivas. 
         StopAllCoroutines();
         escribiendo = false;
@@ -90,7 +90,7 @@ public class SistemaDialogo : MonoBehaviour
 
             indiceFraseActual++; //Entonces avanzo a la siguiente frase
             //Si aun me quedan frases por sacar
-          if(indiceFraseActual < dialogoActual.frase.Length)
+          if(indiceFraseActual < dialogoActual.frases.Length)
           {
                 //La Escribo
                 StartCoroutine(EscribirFrase());
