@@ -22,7 +22,12 @@ public class Player : MonoBehaviour
    // El FixedUpdate puede dar caso a misclicks para esto mejor un Update
     void Update()
     {
-        Movimiento();
+        if (Time.timeScale == 1)
+        {
+          
+            Movimiento();
+            
+        }
         ComprobarInteraccion();
     }
 
