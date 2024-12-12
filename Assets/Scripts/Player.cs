@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             //Mira a ver si hemos llegado a dicho destino..
             // lo vimos con el tema de las animaciones de Pedro el zombi del anterior juego..
             //sirve para evitar que el valor inicial sea 0.
-            if (!agent.pathPending&& agent.remainingDistance<= agent.stoppingDistance)
+            if(!agent.pathPending&& agent.remainingDistance<= agent.stoppingDistance)
             {
                 //Y por lo tanto, interactúo con el NPC o enemigos.
                 npc.Interactuar(transform);
