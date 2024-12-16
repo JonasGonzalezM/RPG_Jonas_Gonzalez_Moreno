@@ -7,6 +7,7 @@ public class SistemaDialogo : MonoBehaviour
 {
     [SerializeField] private GameObject marcoDialogo;
     [SerializeField] private TMP_Text textoDialogo;
+    [SerializeField] private Transform npcCamera; //Camara compartida por todos los NPCs.
     //PATRON SINGLE-TON
     //1. SOLO EXISTE UNA INSTANCIA DE  SistemaDialogo
     //2. Es accesible desde cualqiuer punto del programa
@@ -37,12 +38,21 @@ public class SistemaDialogo : MonoBehaviour
         }
     }
 
-    public void IniciarDialogo(DialogoSO dialogo)
+    public void IniciarDialogo(DialogoSO dialogo, Transform cameraPoint)
     {
         Time.timeScale = 0;
         // el dialogo actual es el que tenemos que 
         dialogoActual = dialogo;
         marcoDialogo.SetActive(true);
+
+        //Posiciono la camara en el punto de este NPC.
+        //npcCamera.position = cameraPoint.position;
+        //npcCamera.rotation = cameraPoint.rotation;
+        //Esto es válido pero hay otra manera.
+       
+        //Posiciono y Roto la camara en el punto de este NPC.
+        npcCamera.SetPositionAndRotation(cameraPoint.position, cameraPoint.rotation);
+
         StartCoroutine(EscribirFrase());
     }
 

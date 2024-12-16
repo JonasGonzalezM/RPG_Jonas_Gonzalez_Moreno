@@ -8,6 +8,7 @@ public class NPC : MonoBehaviour
 {
     [SerializeField] private DialogoSO miDialogo;
     [SerializeField] private float duracionRotacion;
+    [SerializeField] private Transform cameraPoint; //punto que referencia la camara?¿ 
     public void Interactuar(Transform interactuador)
     {
         //poco a poco voy rotando hacia el interactuador y CUANDO TERMINE de rotarme..... se inicia la interaccion.
@@ -19,7 +20,7 @@ public class NPC : MonoBehaviour
     private void IniciarInteraccion()
     {
         Debug.Log("Se inicia interaccion");
-        SistemaDialogo.trono.IniciarDialogo(miDialogo);
+        SistemaDialogo.trono.IniciarDialogo(miDialogo, cameraPoint);
     }
 
     // Start is called before the first frame update
