@@ -1869,7 +1869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 334690672}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Suelos Combate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2225,9 +2225,9 @@ GameObject:
   - component: {fileID: 433987500}
   - component: {fileID: 433987499}
   - component: {fileID: 433987498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A (6)
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5705,9 +5705,9 @@ GameObject:
   - component: {fileID: 1018584090}
   - component: {fileID: 1018584089}
   - component: {fileID: 1018584088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A (5)
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6770,9 +6770,9 @@ GameObject:
   - component: {fileID: 1170971062}
   - component: {fileID: 1170971061}
   - component: {fileID: 1170971060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A (12)
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9117,9 +9117,9 @@ GameObject:
   - component: {fileID: 1554118791}
   - component: {fileID: 1554118790}
   - component: {fileID: 1554118789}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A (11)
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -10083,9 +10083,9 @@ GameObject:
   - component: {fileID: 1786719838}
   - component: {fileID: 1786719837}
   - component: {fileID: 1786719836}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A (16)
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -13833,9 +13833,9 @@ GameObject:
   - component: {fileID: 2503524038586458537}
   - component: {fileID: 385825848492037475}
   - component: {fileID: 2503524038586458538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tile_A
-  m_TagString: Suelo Combate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
