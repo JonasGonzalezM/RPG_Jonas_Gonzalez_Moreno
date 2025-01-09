@@ -1860,6 +1860,43 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &334690671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334690672}
+  m_Layer: 0
+  m_Name: Suelos Combate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &334690672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334690671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1518159802706423308}
+  - {fileID: 1018584087}
+  - {fileID: 433987497}
+  - {fileID: 1554118788}
+  - {fileID: 1170971059}
+  - {fileID: 1786719835}
+  m_Father: {fileID: 724823624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366165977
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,7 +2227,7 @@ GameObject:
   - component: {fileID: 433987498}
   m_Layer: 0
   m_Name: Tile_A (6)
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -2208,7 +2245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &433987498
 BoxCollider:
@@ -2306,7 +2343,7 @@ Transform:
   m_GameObject: {fileID: 442633395}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 0, z: -14.39}
+  m_LocalPosition: {x: -7.5, y: -0.6700001, z: -14.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3392,7 +3429,7 @@ Transform:
   m_GameObject: {fileID: 645179091}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 0, z: -9.01}
+  m_LocalPosition: {x: -7.5, y: -0.6700001, z: -9.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3985,6 +4022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724823624}
   - component: {fileID: 724823625}
+  - component: {fileID: 724823626}
   m_Layer: 0
   m_Name: MAPA
   m_TagString: Untagged
@@ -4010,6 +4048,7 @@ Transform:
   - {fileID: 128065365}
   - {fileID: 1435452339}
   - {fileID: 1471125402}
+  - {fileID: 334690672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &724823625
@@ -4042,6 +4081,37 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 1c9c7acd197329d469bb7c28dd0c27da, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!114 &724823626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724823623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: -1372625422
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: bed7c9ded7447ba4c81fdb129bcadcbf, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &739552427
 GameObject:
@@ -4157,10 +4227,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 740527650}
+  - component: {fileID: 740527652}
   - component: {fileID: 740527649}
   - component: {fileID: 740527651}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4202,6 +4273,7 @@ Transform:
   m_LocalScale: {x: 0.67296, y: 0.67296, z: 0.67296}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 744103393}
   - {fileID: 1594932059}
   - {fileID: 2900596324867277333}
   - {fileID: 1922814984}
@@ -4230,6 +4302,65 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &740527652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740527648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b99e1b7306bb1146a8e72326a256dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &744103392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744103393}
+  - component: {fileID: 744103394}
+  m_Layer: 0
+  m_Name: SistemaCombate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744103393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744103392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 740527650}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744103394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744103392}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79716d520a7ddfb4e8507e8088867a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 740527652}
+  agent: {fileID: 740527651}
+  velocidadCombate: 4
 --- !u!1 &759941481
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,7 +4524,7 @@ GameObject:
   - component: {fileID: 792568696}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5125,7 +5256,7 @@ Transform:
   m_GameObject: {fileID: 922186250}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.48, y: 0, z: -3.99}
+  m_LocalPosition: {x: -8.48, y: -0.6700001, z: -3.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5315,7 +5446,7 @@ Transform:
   m_GameObject: {fileID: 970873426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.11, y: 0, z: 0}
+  m_LocalPosition: {x: -5.11, y: -0.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5556,7 +5687,7 @@ Transform:
   m_GameObject: {fileID: 1014687394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.55, y: 0, z: -3.99}
+  m_LocalPosition: {x: -3.55, y: -0.6700001, z: -3.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5576,7 +5707,7 @@ GameObject:
   - component: {fileID: 1018584088}
   m_Layer: 0
   m_Name: Tile_A (5)
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -5594,7 +5725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1018584088
 BoxCollider:
@@ -5781,7 +5912,7 @@ Transform:
   m_GameObject: {fileID: 1060871592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59, y: 0, z: -7.23}
+  m_LocalPosition: {x: -1.59, y: -0.6700001, z: -7.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6641,7 +6772,7 @@ GameObject:
   - component: {fileID: 1170971060}
   m_Layer: 0
   m_Name: Tile_A (12)
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -6659,7 +6790,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1170971060
 BoxCollider:
@@ -7032,9 +7163,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1518159802706423308}
   - {fileID: 75196713}
-  - {fileID: 1018584087}
   - {fileID: 1639119664}
   - {fileID: 1099016255}
   - {fileID: 1770668016}
@@ -7048,7 +7177,6 @@ Transform:
   - {fileID: 2004698232}
   - {fileID: 1902648390}
   - {fileID: 500230217}
-  - {fileID: 433987497}
   - {fileID: 1849497051}
   - {fileID: 684229525}
   - {fileID: 1522259494}
@@ -7064,7 +7192,6 @@ Transform:
   - {fileID: 1214916339}
   - {fileID: 1100135328}
   - {fileID: 739552428}
-  - {fileID: 1554118788}
   - {fileID: 1390780414}
   - {fileID: 1000305011}
   - {fileID: 1435806247}
@@ -7078,10 +7205,8 @@ Transform:
   - {fileID: 1471331317}
   - {fileID: 1320009115}
   - {fileID: 1448436400}
-  - {fileID: 1170971059}
   - {fileID: 500537783}
   - {fileID: 698358548}
-  - {fileID: 1786719835}
   - {fileID: 883789164}
   m_Father: {fileID: 724823624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7630,7 +7755,7 @@ Transform:
   m_GameObject: {fileID: 1384636144}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59, y: 0, z: -14.39}
+  m_LocalPosition: {x: -1.59, y: -0.6700001, z: -14.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8891,7 +9016,7 @@ Transform:
   m_GameObject: {fileID: 1525369466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.48, y: 0, z: 0}
+  m_LocalPosition: {x: -8.48, y: -0.6700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8994,7 +9119,7 @@ GameObject:
   - component: {fileID: 1554118789}
   m_Layer: 0
   m_Name: Tile_A (11)
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9012,7 +9137,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1554118789
 BoxCollider:
@@ -9178,6 +9303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594932059}
   - component: {fileID: 1594932060}
+  - component: {fileID: 1594932061}
   m_Layer: 0
   m_Name: SistemaPatrulla
   m_TagString: Untagged
@@ -9212,8 +9338,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0917c9d66c6764fb0164ae18979646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  main: {fileID: 740527652}
   ruta: {fileID: 1383785534}
   agent: {fileID: 740527651}
+  velocidadPatrulla: 0
+--- !u!135 &1594932061
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594932058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1639119663
 GameObject:
   m_ObjectHideFlags: 0
@@ -9936,7 +10085,7 @@ GameObject:
   - component: {fileID: 1786719836}
   m_Layer: 0
   m_Name: Tile_A (16)
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9954,7 +10103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1786719836
 BoxCollider:
@@ -13077,7 +13226,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1224204738}
+  m_Father: {fileID: 334690672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1535765236011680341
 Transform:
@@ -13686,7 +13835,7 @@ GameObject:
   - component: {fileID: 2503524038586458538}
   m_Layer: 0
   m_Name: Tile_A
-  m_TagString: Untagged
+  m_TagString: Suelo Combate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14305,6 +14454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03d492cb87b8124a979415a682c45ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
 --- !u!4 &2901407277160005091
 Transform:
   m_ObjectHideFlags: 0

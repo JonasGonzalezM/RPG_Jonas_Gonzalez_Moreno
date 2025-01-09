@@ -6,12 +6,16 @@ using UnityEngine.AI;
 
 public class SistemaPatrulla : MonoBehaviour
 {
+    [SerializeField] private Enemigo main;
+
     [SerializeField] private Transform ruta;
 
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private float velocidadPatrulla;
+    
     private List<Vector3> listadoPuntos=new List<Vector3>();// Lista es una Longitud y es Variable
     //Pregunta de examen
 
-    [SerializeField] private NavMeshAgent agent;
 
     private int indiceActual = -1; //marca el punto al cual debo ir
 
@@ -23,8 +27,11 @@ public class SistemaPatrulla : MonoBehaviour
 
     private void Awake() //Funciona antes del Start. Se puede decir que tiene prioridad al Start
     {
+        // le digo al Script Enemigo que el sistema de patrulla que tiene soy yo
+        main.Patrulla = this;
+        
 
-        agent = GetComponent<NavMeshAgent>();
+        //agent = GetComponent<NavMeshAgent>();
 
         foreach (Transform punto in ruta)
         {
@@ -34,6 +41,11 @@ public class SistemaPatrulla : MonoBehaviour
 
         }
 
+    }
+
+    private void OnEnable()
+    {
+        agent.speed = velocidadPatrulla;
     }
 
 
@@ -90,6 +102,25 @@ public class SistemaPatrulla : MonoBehaviour
         //Mi destino es dentro del listado de puntos aquel con el nuevo indice calculado.
         destinoActual = listadoPuntos[indiceActual];
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            //Abandonamos la corrutina de patrulla
+            StopAllCoroutines();
+            //le digo a main que active el combate, pasándole el objetivo al que tiene que perseguir
+            main.ActivarCombate(other.transform);
+
+        }
+    }
+
+    //public void ActivarCombate()
+    //{
+    //    combate.enabled = true;
+    //    patrulla.enabled = false;
+    //}
 
 
     //Posible pregunta de examen y esto no iniciaria porque no se ha iniciado la Corrutina.
