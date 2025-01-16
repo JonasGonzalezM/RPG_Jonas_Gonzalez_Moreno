@@ -13,11 +13,27 @@ public class Enemigo : MonoBehaviour
     public SistemaCombate Combate { get => combate; set => combate = value; }
     public Transform Target { get => target; set => target = value; }
 
-    internal void ActivarCombate( Transform target)
+    public void ActivarCombate( Transform target)
     {
         combate.enabled = true;  // activamos combate
         patrulla.enabled = false; // desactivamos la patrulla
         this.target = target; // definimos target
+    }
+
+    public void Awake()
+    {
+        patrulla.enabled=true;
+
+    }
+
+    public void ActivarPatrulla()
+    {
+        //Habilitar combate
+        combate.enabled = false;
+
+        //Habilitar patrulla
+        patrulla.enabled = true;
+       
     }
 
     // Start is called before the first frame update

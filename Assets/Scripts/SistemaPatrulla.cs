@@ -45,7 +45,13 @@ public class SistemaPatrulla : MonoBehaviour
 
     private void OnEnable()
     {
-        agent.speed = velocidadPatrulla;
+        //el stopping distance vuelve a ser 0
+        agent.speed = velocidadPatrulla;//vuelve a la velocidad de patrulla
+
+        agent.stoppingDistance = 0;
+        //esta linea si se le pone activado empieza a patrullar desde el primer punto si se le quita lo que hace es continuar por donde lo dejó
+        //indiceActual = -1;
+        StartCoroutine(PatrullarYEsperar());
     }
 
 
@@ -53,7 +59,6 @@ public class SistemaPatrulla : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(PatrullarYEsperar());
     }
 
     private IEnumerator PatrullarYEsperar() // El IEnumerator es una Corrutina

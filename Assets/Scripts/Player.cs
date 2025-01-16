@@ -91,9 +91,10 @@ public class Player : MonoBehaviour
 
 
 
+    
 
-
-
-
-
+    public void HacerDanho(float danhoAtaque)
+    {
+        Debug.Log("me has hecho" + danhoAtaque);
+    }
 }

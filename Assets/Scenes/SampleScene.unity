@@ -4102,7 +4102,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   m_UseGeometry: 0
-  m_DefaultArea: 0
+  m_DefaultArea: 3
   m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
   m_IgnoreNavMeshObstacle: 1
@@ -4360,7 +4360,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   main: {fileID: 740527652}
   agent: {fileID: 740527651}
-  velocidadCombate: 4
+  velocidadCombate: Infinity
+  distancia: 2
+  anim: {fileID: 0}
 --- !u!1 &759941481
 GameObject:
   m_ObjectHideFlags: 0
@@ -9341,7 +9343,7 @@ MonoBehaviour:
   main: {fileID: 740527652}
   ruta: {fileID: 1383785534}
   agent: {fileID: 740527651}
-  velocidadPatrulla: 0
+  velocidadPatrulla: 3
 --- !u!135 &1594932061
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14109,6 +14111,7 @@ GameObject:
   - component: {fileID: 2900596324867277333}
   - component: {fileID: 2900596324867277335}
   - component: {fileID: 2900596324867277334}
+  - component: {fileID: 2900596324867277336}
   m_Layer: 0
   m_Name: EnemyVisual
   m_TagString: Untagged
@@ -14455,6 +14458,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
+--- !u!114 &2900596324867277336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525160746069055663}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79716d520a7ddfb4e8507e8088867a14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  main: {fileID: 740527652}
+  agent: {fileID: 740527651}
+  velocidadCombate: Infinity
+  distancia: 2
+  anim: {fileID: 0}
 --- !u!4 &2901407277160005091
 Transform:
   m_ObjectHideFlags: 0
