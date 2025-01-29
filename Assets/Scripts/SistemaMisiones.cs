@@ -12,7 +12,7 @@ public class SistemaMisiones : MonoBehaviour
     private void OnEnable()
     {
         eventManager.OnNuevaMision += EncenderToggleMision;
-        eventManager.OnActualizarMision+= 
+        //eventManager.OnActualizarMision+= 
     }
 
     private void EncenderToggleMision(MisionSO mision)
