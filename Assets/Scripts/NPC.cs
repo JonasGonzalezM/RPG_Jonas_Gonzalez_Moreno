@@ -7,13 +7,15 @@ using UnityEngine;
 public class NPC : MonoBehaviour, IInteractuable
 {
     [SerializeField] EventManagerSO eventManager;
-    [SerializeField] private MisionSO mision;
+    [SerializeField] private MisionSO miMision;
     //[SerializeField] private DialogoSO miDialogo;
     [SerializeField] private DialogoSO dialogo1;
     [SerializeField] private DialogoSO dialogo2;
     [SerializeField] private float duracionRotacion;
     [SerializeField] private float lookAtDuration;
     [SerializeField] private Transform cameraPoint; //punto que referencia la camara?¿ 
+
+    private DialogoSO dialogoActual;
 
 
     private void Awake()
@@ -24,7 +26,7 @@ public class NPC : MonoBehaviour, IInteractuable
 
     private void OnEnable()
     {
-        EventManager.OnTerminarMision += CambiarDialogo;
+        eventManager.OnTerminarMision += CambiarDialogo;
     }
 
     private void CambiarDialogo(MisionSO misionTerminada)

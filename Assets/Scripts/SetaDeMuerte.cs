@@ -23,7 +23,7 @@ public class SetaDeMuerte : MonoBehaviour,IInteractuable
         mision.repeticionActual++; //Aumentamos en uno la repeticion de esta misión
 
         //Todavia quedan setas por recoger
-        if ((mision.repeticionActual < mision.totalRepeticiones)
+        if ((mision.repeticionActual < mision.totalRepeticiones))
         {
             eventManager.ActualizarMision(mision);
         }

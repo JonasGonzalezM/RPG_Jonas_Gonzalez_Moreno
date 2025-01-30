@@ -8,7 +8,7 @@ public class SistemaMisiones : MonoBehaviour
     private EventManagerSO eventManager;
 
     [SerializeField] private ToggleMision[] togglesMision;
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     private void OnEnable()
     {
         eventManager.OnNuevaMision += EncenderToggleMision;
@@ -22,7 +22,7 @@ public class SistemaMisiones : MonoBehaviour
 
     private void ActualizarToggleMision(MisionSO mision)
     {
-        togglesMision[mision.indiceMision].TextoMision.text = mision.ordenInicial;
-        togglesMision[mision.indiceMision].TextoMision.text += "(" + mision.repeticionActual + "/" + mision.totalRepeticiones + ")";
+        togglesMision[mision.indiceMision].Text.text = mision.ordenInicial;
+        togglesMision[mision.indiceMision].Text.text += "(" + mision.repeticionActual + "/" + mision.totalRepeticiones + ")";
     }
 }
