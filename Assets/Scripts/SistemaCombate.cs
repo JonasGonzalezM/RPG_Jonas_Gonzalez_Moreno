@@ -62,9 +62,9 @@ public class SistemaCombate : MonoBehaviour
     {
         //Calcula la direccion al objetivo
         Vector3 direccionATarget = (main.Target.transform.position - agent.transform.position).normalized;
-        // evito que roto de cabeza hacia adelante
+        // evito que rote de cabeza hacia adelante
         direccionATarget.y=0;
-        //transformo una dirreccion en una rotacion 
+        //transformo una direccion en una rotacion 
         Quaternion rotacionATarget = Quaternion.LookRotation(direccionATarget);
         //roto  hacia el target
         transform.rotation = rotacionATarget;
@@ -80,7 +80,7 @@ public class SistemaCombate : MonoBehaviour
 
     private void FinAnimacionAtaque()
     {
-        anim.SetBool("atttacking",false);
+        anim.SetBool("attacking",false);
     }
     #endregion
 }
