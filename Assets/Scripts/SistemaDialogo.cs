@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SistemaDialogo : MonoBehaviour
 {
+    [SerializeField] public EventManagerSO eventManager;
     [SerializeField] private GameObject marcoDialogo;
     [SerializeField] private TMP_Text textoDialogo;
     [SerializeField] private Transform npcCamera; //Camara compartida por todos los NPCs.

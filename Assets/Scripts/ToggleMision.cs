@@ -10,10 +10,10 @@ public class ToggleMision : MonoBehaviour
     private Toggle toggleVisual;
 
     [SerializeField]
-    private Text text;
+    public Text textoMision;
 
     public Toggle ToggleVisual { get => toggleVisual; }
-    public Text Text { get => text; set => text = value; }
+    public Text Text { get => textoMision; set => textoMision = value; }
 
     private void Awake()
     {
