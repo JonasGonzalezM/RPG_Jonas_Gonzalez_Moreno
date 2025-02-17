@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Dialogo2
   m_EditorClassIdentifier: 
   frases:
-  - Hola soy una falsa copia
-  - Onii chan
-  - 'Yamete Kudasai
+  - Hey muchas gracias por las Setas
+  - Desgraciadamente no tengo nada para darte.
+  - 'Mi creador no me completo del todo asi que buena suerte
 
 '
-  tiempoEntreLetras: 0
+  tiempoEntreLetras: 0.02
+  tieneMision: 0
+  mision: {fileID: 11400000, guid: 368d1a1dae139cd478254a250e89f30a, type: 2}

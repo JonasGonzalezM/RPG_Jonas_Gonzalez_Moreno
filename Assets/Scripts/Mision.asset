@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c0a5e95a7684a469bae5caf876911f, type: 3}
   m_Name: Mision
   m_EditorClassIdentifier: 
-  ordenInicial: 
-  ordenFinal: 
-  tieneRepeticion: 0
-  totalRepeticiones: 0
+  ordenInicial: setas recogidas
+  ordenFinal: vuelve con Pedro
+  tieneRepeticion: 1
+  totalRepeticiones: 3
   indiceMision: 0

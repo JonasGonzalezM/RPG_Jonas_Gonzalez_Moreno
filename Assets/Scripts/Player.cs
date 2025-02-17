@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
     private void ComprobarInteraccion()
     {
        //Si existe un interactuable al cual clicke y lleva consigo el script NPC...
-        if(ultimoClick!=null && ultimoClick.TryGetComponent(out NPC npc))
+        if(ultimoClick!=null && ultimoClick.TryGetComponent(out IInteractuable npc))
         {
             
             //actualizo la distacia de parada para no besar la boca del NPC

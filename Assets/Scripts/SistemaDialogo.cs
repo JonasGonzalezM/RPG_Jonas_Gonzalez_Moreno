@@ -129,10 +129,15 @@ public class SistemaDialogo : MonoBehaviour
     {
         marcoDialogo.SetActive(false); //Cerramos el marco de diálogo
         indiceFraseActual = 0; //Para que en posteriores dialogos empezamos desde el indice 0
-        escribiendo = false;
-        dialogoActual = null; //Ya no tengo diálogo que escribir;
         Time.timeScale = 1;
+
+        if (dialogoActual.tieneMision)
+        {
+            eventManager.NuevaMision(dialogoActual.mision);
+        }
+        dialogoActual = null; //Ya no tengo diálogo que escribir;
     }
+
 
 
     //// Update is called once per frame

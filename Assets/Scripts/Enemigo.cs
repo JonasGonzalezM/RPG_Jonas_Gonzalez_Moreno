@@ -22,7 +22,7 @@ public class Enemigo : MonoBehaviour
 
     public void Awake()
     {
-        patrulla.enabled=true;
+        //patrulla.enabled=true;
 
     }
 

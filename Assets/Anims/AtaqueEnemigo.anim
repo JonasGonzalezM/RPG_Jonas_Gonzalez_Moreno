@@ -10563,7 +10563,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2
+    m_StopTime: 1.2166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -74016,8 +74016,8 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.2
-    functionName: Fin
+  - time: 1.2166667
+    functionName: FinAnimacionAtaque
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

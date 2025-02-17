@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Dialogo1
   m_EditorClassIdentifier: 
   frases:
-  - 'Hola aventurero, te esperan grandes aventuras '
-  - Necesito que me toques y me hagas un encargo
-  - Ve a buscar al Yayo Pedro y su pivote que tengo hambre
-  tiempoEntreLetras: 0
+  - 'Hola aventurero, que tal te va la semana '
+  - A antes de que respondas necesito una ayuda con algo
+  - Ve a buscar un par de Setas de La Muerte para comer que tengo hambre
+  tiempoEntreLetras: 0.02
+  tieneMision: 1
+  mision: {fileID: 11400000, guid: 368d1a1dae139cd478254a250e89f30a, type: 2}

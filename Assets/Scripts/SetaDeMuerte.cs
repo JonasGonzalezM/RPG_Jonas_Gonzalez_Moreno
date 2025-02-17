@@ -18,10 +18,10 @@ public class SetaDeMuerte : MonoBehaviour,IInteractuable
     {
         outline = GetComponent<Outline>();
     }
-    public void Interactuar()
+    public void Interactuar(Transform interactuador)
     {
         mision.repeticionActual++; //Aumentamos en uno la repeticion de esta misión
-
+        
         //Todavia quedan setas por recoger
         if ((mision.repeticionActual < mision.totalRepeticiones))
         {

@@ -39,7 +39,7 @@ public class NPC : MonoBehaviour, IInteractuable
     public void Interactuar(Transform interactuador)
     {
         //poco a poco voy rotando hacia el interactuador y CUANDO TERMINE de rotarme..... se inicia la interaccion.
-        Debug.Log("Hola!");
+        //Debug.Log("Hola!");
         transform.DOLookAt(interactuador.position,duracionRotacion,AxisConstraint.Y).OnComplete(IniciarInteraccion);
     }
 
